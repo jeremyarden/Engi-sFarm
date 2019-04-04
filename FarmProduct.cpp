@@ -7,3 +7,7 @@
 //
 
 #include "FarmProduct.hpp"
+FarmProduct::FarmProduct(int price, int amount) : Product(price,amount)
+{
+    
+}

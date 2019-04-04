@@ -9,18 +9,19 @@
 #ifndef SideProduct_hpp
 #define SideProduct_hpp
 
-#include <stdio.h>
-#include "Product.hpp"
+#include "FarmProduct.hpp"
 #include "LinkedList.hpp"
 #include <stdio.h>
 class SideProduct : public Product{
 private:
-    LinkedList<Product> recipe;
+    LinkedList<FarmProduct> recipe;
 public:
-    SideProduct();
-    /*ctor default untuk SideProduct*/
-    getRecipePart(int idx);
-    /*Untuk mengambil isi resep pembuatan SideProduct*/
+    /**ctor default untuk SideProduct*/
+    SideProduct(int price, int amount);
+    /**Untuk mengambil isi resep pembuatan SideProduct*/
+    FarmProduct getRecipePart(int idx);
+   /**Memasukan resep yang diperlukan*/
+    void addRecipePart(FarmProduct el);
     
 };
 #endif /* SideProduct_hpp */

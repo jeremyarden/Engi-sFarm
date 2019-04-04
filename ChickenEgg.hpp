@@ -3,7 +3,7 @@
 #define Pork_hpp
 
 #include <stdio.h>
-class Pork : public FarmProduct{
-    Pork();
-}
+class ChickenEgg : public FarmProduct{
+    ChickenEgg(int price,int amount);
+};
 #endif /* ChickenEgg_hpp */

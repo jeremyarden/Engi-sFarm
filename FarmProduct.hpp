@@ -14,12 +14,12 @@
  FarmProduct class. FarmProduct adalah parent dari 
  */
 class FarmProduct : public Product{
-    
+
 public:
     /**
      ctor default untuk FarmProduct
      */
-    FarmProduct();
+    FarmProduct(int price, int amount);
     
 };
 #endif /* FarmProduct_hpp */
