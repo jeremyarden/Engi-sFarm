@@ -4,6 +4,9 @@
 #include "Beef.hpp"
 #include "CowMilk.hpp"
 
+#ifndef Sapi_hpp
+#define Sapi_hpp
+
 class Sapi : public MeatAnimal, public MilkAnimal {
     public:
         Sapi(); ///ctor
@@ -11,11 +14,14 @@ class Sapi : public MeatAnimal, public MilkAnimal {
         bool isSapiDead(); ///penanda sapi hidup atau mati
 
         Beef getDagingSapi() const; ///getter daging sapi
-        void setDagingSapi(); ///setter daging sapi
+        ///setter daging sapi
+        ///dihapus (perubahan)
         CowMilk getSusuSapi() const; ///getter susu sapi
-        void setSusuSapi(); ///setter susu sapi
+        ///setter susu sapi
+        ///dihapus (perubahan)
         
     private:
         Beef dagingSapi; ///produk yang dihasilkan berupa beef
         CowMilk susuSapi; ///produk yang dihasilkan berupa susu sapi
-}
+};
+#endif

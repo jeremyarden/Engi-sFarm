@@ -4,6 +4,9 @@
 #include "ChickenEgg.hpp"
 #include "ChickenMeat.hpp"
 
+#ifndef Ayam_hpp
+#define Ayam_hpp
+
 class Ayam : public EggAnimal, public MeatAnimal {
     public:
         Ayam(); ///ctor
@@ -11,11 +14,15 @@ class Ayam : public EggAnimal, public MeatAnimal {
         bool isAyamDead(); ///penanda ayam hidup atau mati
 
         ChickenEgg getTelurAyam() const; ///getter produk telur ayam
-        void setTelurAyam(); ///setter telur ayam
+        ///setter telur ayam
+        ///dihapus (perubahan)
         ChickenMeat getDagingAyam() const; ///getter produkk daging ayam
-        void setDagingAyam(); ///setter daging ayam
+        ///setter daging ayam
+        ///dihapus (perubahan)
     
     private:
         ChickenEgg telurAyam; ///produk yang dihasilkan berupa telur ayam
         ChickenMeat dagingAyam; ///produk yang dihasilkan berupa daging ayam
-}
+};
+
+#endif

@@ -2,6 +2,9 @@
 #include "MeatAnimal.hpp"
 #include "Pork.hpp"
 
+#ifndef Babi_hpp
+#define Babi_hpp
+
 class Babi : public MeatAnimal {
     public:
         Babi(); ///ctor
@@ -9,8 +12,10 @@ class Babi : public MeatAnimal {
         bool isBabiDead(); ///penanda babi hidup atau mati
 
         Pork getDagingBabi() const; ///getter produk pork
-        void setDagingBabi(); ///setter daging babi
+        ///setter daging babi
+        ///dihapus (perubahan)
         
     private:
         Pork dagingBabi; ///produk yang dihasilkan berupa pork
-}
+};
+#endif

@@ -1,5 +1,9 @@
 #include "FarmProduct.hpp"
 #include "Cell.hpp"
+#include <stdlib.h>
+
+#ifndef FarmAnimal_hpp
+#define FarmAnimal_hpp
 
 class FarmAnimal {
     /**Talk (pure virtual)
@@ -20,17 +24,20 @@ class FarmAnimal {
         void Eat();
 
         /** getter waktu lapar */
-        int getHungryCountdown() const;
+        int static getHungryCountdown() const; /* ditambahin static (perubahan) */
         /** setter waktu lapar */ 
-        void setHungryCountdown() const;
+         /* setter dihapus (perubahan) */
         /** getter posisi binatang */
-        Cell getPetakBinatang() const;
+        Point getPetakBinatang() const; /* diganti jadi point (perubahan) */
         /** setter posisi binatang */
-        void setPetakBinatang(Cell _C);
+        /* setter dihapus (perubahan) */
 
     protected:
         /** menghitung waktu lapar */
         static int hungryCountdown;
         /** posisi binatang dengan kelas Cell */
-        Cell petakBinatang; 
-}
+        /* cell dihapus (perubahan) */
+        /** untuk bergerak menggunakan point */
+        Point letak; /* perubahan */
+};
+#endif
