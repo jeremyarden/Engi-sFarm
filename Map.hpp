@@ -1,22 +1,18 @@
-//
-//  Map.hpp
-//  Engi's Farm
-//
-//  Created by Abiyyu Ismunandar on 3/20/19.
-//  Copyright © 2019 Abiyyu Ismunandar. All rights reserved.
-//
+
 
 #ifndef Map_hpp
 #define Map_hpp
 #include <string>
-#include <stdio.h>
-#include "Cell.h"
+#include <iostream>
+#include <fstream>
 /**
  Map Class. Kelas untuk membuat peta yang digunakan untuk permainan.
  */
 class Map{
 private:
-    Cell **map;
+    const static int MAP_LENGTH = 10;
+    const static int MAP_WIDTH = 11;
+    char map[MAP_LENGTH][MAP_WIDTH];
 public:
     /**
      Constructor map yang membuat peta dari file eksternal
@@ -26,10 +22,13 @@ public:
     /**
      Getter elemen peta 
      */
-    Cell getMapEl(int i,int j);
+    char getMapEl(int i,int j);
+    /**
+     */
+    void setMapEl(int i,int j, char El);
     /**
      Prosedur yang akan menggambarkan peta dengan legend-legendnya sesuai
-     dengan tipe Cellnya
+     dengan isinya
      */
     void drawMap();
 };
