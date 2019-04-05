@@ -1,6 +1,6 @@
 #include "Kambing.hpp"
 
-Kambing::Kambing() : susuKambing(4000,0), dagingKambing(5000,1) {
+Kambing::Kambing() : susuKambing("susuKambing",4000,0), dagingKambing("dagingKambing",5000,1) {
 
 } ///ctor
 
@@ -20,3 +20,7 @@ GoatMilk Kambing::getSusuKambing() const {
 GoatMeat Kambing::getDagingKambing() const {
     return dagingKambing;
 } ///getter daging kambing
+
+void Kambing::render() {
+    Map::setMapEl(letak.getX(),letak.getY(),"G");
+}

@@ -10,6 +10,7 @@ class Kelinci : public MeatAnimal {
         Kelinci(); ///ctor
         void Talk(); ///kelinci berbicara "cit cit"
         bool isKelinciDead(); ///penanda kelinci hidup atau mati
+        void render(); ///override dr renderable (perubahan)
 
         RabbitMeat getDagingKelinci() const; ///getter daging kelinci
         ///setter daging kelinci

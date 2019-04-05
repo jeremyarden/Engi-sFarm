@@ -12,6 +12,7 @@ class Kambing : public MeatAnimal, public MilkAnimal {
         Kambing(); ///ctor
         void Talk(); ///kambing mengeluarkan suara "mbek"
         bool isKambingDead(); ///penanda kambing hidup atau mati
+        void render(); ///override dr renderable (perubahan)
         
         GoatMilk getSusuKambing() const; ///getter susu kambing
         ///setter susu kambing

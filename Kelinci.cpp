@@ -1,6 +1,6 @@
 #include "Kelinci.hpp"
 
-Kelinci::Kelinci() : dagingKelinci(4000,1) {
+Kelinci::Kelinci() : dagingKelinci("dagingKelinci",4000,1) {
 
 } ///ctor
 
@@ -15,3 +15,7 @@ bool Kelinci::isKelinciDead() {
 RabbitMeat Kelinci::getDagingKelinci() const {
     return dagingKelinci;
 } ///getter daging kelinci
+
+void Kelinci::render() {
+    Map::setMapEl(letak.getX(),letak.getY(),"R");
+}

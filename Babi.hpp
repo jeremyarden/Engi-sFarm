@@ -10,6 +10,7 @@ class Babi : public MeatAnimal {
         Babi(); ///ctor
         void Talk(); ///babi mengeluarkan suara "oink"
         bool isBabiDead(); ///penanda babi hidup atau mati
+        void render(); ///override dr renderable (perubahan)
 
         Pork getDagingBabi() const; ///getter produk pork
         ///setter daging babi

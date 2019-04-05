@@ -1,6 +1,6 @@
 #include "Babi.hpp"
 
-Babi::Babi() : dagingBabi(5000,1) {
+Babi::Babi() : dagingBabi("dagingBabi",5000,1) {
 
 } ///ctor
 
@@ -15,3 +15,7 @@ bool Babi::isBabiDead() {
 Pork Babi::getDagingBabi() const {
     return dagingBabi;
 } ///getter produk pork
+
+void Babi::render() {
+    Map::setMapEl(letak.getX(),letak.getY(),"P");
+}

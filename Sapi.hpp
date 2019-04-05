@@ -12,6 +12,7 @@ class Sapi : public MeatAnimal, public MilkAnimal {
         Sapi(); ///ctor
         void Talk(); ///sapi mengeluarkan suara "moo"
         bool isSapiDead(); ///penanda sapi hidup atau mati
+        void render(); ///override dr renderable (perubahan)
 
         Beef getDagingSapi() const; ///getter daging sapi
         ///setter daging sapi

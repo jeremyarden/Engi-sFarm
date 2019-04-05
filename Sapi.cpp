@@ -1,6 +1,6 @@
 #include "Sapi.hpp"
 
-Sapi::Sapi() : susuSapi(4000,0), dagingSapi(6000,1) {
+Sapi::Sapi() : susuSapi("susuSapi",4000,0), dagingSapi("dagingSapi",6000,1) {
 
 } ///ctor
 
@@ -20,3 +20,7 @@ Beef Sapi::getDagingSapi() const {
 CowMilk Sapi::getSusuSapi() const {
     return susuSapi;
 } ///getter susu sapi
+
+void Sapi::render() {
+    Map::setMapEl(letak.getX(),letak.getY(),"S");
+}

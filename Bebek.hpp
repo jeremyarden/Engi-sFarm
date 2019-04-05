@@ -12,6 +12,7 @@ class Bebek : public MeatAnimal, public EggAnimal {
         Bebek(); ///ctor
         void Talk(); ///bebek mengeluarkan suara "kwek"
         bool isBebekDead(); ///penanda bebek hidup atau mati
+        void render(); ///override dr renderable (perubahan)
 
         DuckEgg getTelurBebek() const; ///getter produk telur bebek
         ///setter telur bebek

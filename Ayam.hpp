@@ -3,6 +3,7 @@
 #include "ChickenEgg.hpp"
 #include "ChickenMeat.hpp"
 #include "FarmProduct.hpp"
+#include "Renderable.hpp"
 
 #ifndef Ayam_hpp
 #define Ayam_hpp
@@ -12,6 +13,7 @@ class Ayam : public EggAnimal, public MeatAnimal {
         Ayam(); ///ctor
         void Talk(); ///ayam mengeluarkan suara "petok"
         bool isAyamDead(); ///penanda ayam hidup atau mati
+        void render(); ///override dr renderable (perubahan)
 
         ChickenEgg getTelurAyam() const; ///getter produk telur ayam
         ///setter telur ayam

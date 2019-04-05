@@ -1,6 +1,6 @@
 #include "Bebek.hpp"
 
-Bebek::Bebek() : telurBebek(3000,0), dagingBebek(4000,1) {
+Bebek::Bebek() : telurBebek("telurBebek",3000,0), dagingBebek("dagingBebek",4000,1) {
 
 } ///ctor
 
@@ -20,3 +20,7 @@ DuckEgg Bebek::getTelurBebek() const {
 DuckMeat Bebek::getDagingBebek() const {
     return dagingBebek;
 } ///getter produkk daging bebek
+
+void Bebek::render() {
+    Map::setMapEl(letak.getX(),letak.getY(),"D");
+}

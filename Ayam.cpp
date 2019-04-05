@@ -1,6 +1,6 @@
 #include "Ayam.hpp"
 
-Ayam::Ayam() : telurAyam(2000,0), dagingAyam(3000,1) {
+Ayam::Ayam() : telurAyam("telurAyam",2000,0), dagingAyam("dagingAyam",3000,1) {
     
 } ///ctor
 
@@ -20,3 +20,7 @@ ChickenEgg Ayam::getTelurAyam() const {
 ChickenMeat Ayam::getDagingAyam() const {
     return dagingAyam;
 } ///getter produkk daging ayam
+
+void Ayam::render() {
+    Map::setMapEl(letak.getX(),letak.getY(),"C");
+}
