@@ -6,8 +6,9 @@ using namespace std;
 
 class Land : public Cell
 {
-    protected:
+    public:
         Land(Point P);
+        void eatGrass();
     private:
         bool grass;
 };

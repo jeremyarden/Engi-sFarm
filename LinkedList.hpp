@@ -10,7 +10,6 @@
 #define LinkedList_hpp
 
 #include <stdio.h>
-#include <vector>
 
 
 template<class T>
