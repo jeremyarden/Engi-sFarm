@@ -8,3 +8,32 @@
 
 #include "Product.hpp"
 
+Product::Product(std::string name, int price, int amount)
+{
+    this->name = name;
+    this->price = price;
+    this->amount = amount;
+}
+std::string Product::getProductName()
+{
+    return name;
+}
+int Product::getProductPrice()
+{
+    return price;
+}
+
+int Product::getAmount()
+{
+    return amount;
+}
+
+void Product::addAmount()
+{
+    amount++;
+}
+
+void Product::setProductPrice(int _price)
+{
+    price = _price;
+}

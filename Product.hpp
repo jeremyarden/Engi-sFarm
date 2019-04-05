@@ -19,28 +19,25 @@ class Product{
 private:
     std::string name;   /**Menyimpan nama produk*/
     int price;          /**Menyimpan harga produk*/
+    int amount;         /**Menyimpan banyak produk*/
     
 public:
     /**
      User defined constructor untuk menginisialisasi produk-produk yang akan dijual
      */
-    Product(std::string _name, int price);
-    
+    Product(std::string name, int price, int amount);
     /**
-     Untuk mengambil nama produk
      */
     std::string getProductName();
-    
     /**
      Untuk mengambil harga produk
      */
     int getProductPrice();
-  
     /**
-     Untuk mengganti nama produk
-     */
-    void setProductName(std::string _name);
-    
+     Mengambil jumlah product yang dimiliki*/
+    int getAmount();
+    /**Menambah jumlah amount*/
+    void addAmount();
     /**
      Untuk mengganti harga produk
      */
