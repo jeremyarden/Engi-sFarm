@@ -8,7 +8,7 @@
 #ifndef Bebek_hpp
 #define Bebek_hpp
 
-class Bebek : public MeatAnimal, public EggAnimal {
+class Bebek : public MeatAnimal, public EggAnimal, public Renderable {
     public:
         Bebek(); ///ctor
         void Talk(); ///bebek mengeluarkan suara "kwek"

@@ -6,7 +6,7 @@
 #ifndef Kelinci_hpp
 #define Kelinci_hpp
 
-class Kelinci : public MeatAnimal {
+class Kelinci : public MeatAnimal, public Renderable {
     public:
         Kelinci(); ///ctor
         void Talk(); ///kelinci berbicara "cit cit"

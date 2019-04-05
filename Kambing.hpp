@@ -8,7 +8,7 @@
 #ifndef Kambing_hpp
 #define KAmbing_hpp
 
-class Kambing : public MeatAnimal, public MilkAnimal {
+class Kambing : public MeatAnimal, public MilkAnimal, public Renderable {
     public:
         Kambing(); ///ctor
         void Talk(); ///kambing mengeluarkan suara "mbek"

@@ -6,7 +6,7 @@
 #ifndef Babi_hpp
 #define Babi_hpp
 
-class Babi : public MeatAnimal {
+class Babi : public MeatAnimal, public Renderable {
     public:
         Babi(); ///ctor
         void Talk(); ///babi mengeluarkan suara "oink"

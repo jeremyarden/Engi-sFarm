@@ -1,8 +1,8 @@
 #include "Ayam.hpp"
 
 Ayam::Ayam() : telurAyam("telurAyam",2000,0), dagingAyam("dagingAyam",3000,1) {
-    letak.setX(6); 
-    letak.setY(2); 
+    letak.setX(6);
+    letak.setY(2);
 } ///ctor
 
 void Ayam::Talk() {

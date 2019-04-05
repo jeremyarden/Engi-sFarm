@@ -8,7 +8,7 @@
 #ifndef Ayam_hpp
 #define Ayam_hpp
 
-class Ayam : public EggAnimal, public MeatAnimal {
+class Ayam : public EggAnimal, public MeatAnimal, public Renderable {
     public:
         Ayam(); ///ctor
         void Talk(); ///ayam mengeluarkan suara "petok"

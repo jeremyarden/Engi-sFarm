@@ -8,7 +8,7 @@
 #ifndef Sapi_hpp
 #define Sapi_hpp
 
-class Sapi : public MeatAnimal, public MilkAnimal {
+class Sapi : public MeatAnimal, public MilkAnimal, public Renderable {
     public:
         Sapi(); ///ctor
         void Talk(); ///sapi mengeluarkan suara "moo"

@@ -11,18 +11,22 @@ void FarmAnimal::Move() {
     if (Map::getMapEl(letak.getX() - 1,letak.getY()) == "-") { ///atas
         letak.setX(letak.getX() - 1);
         letak.setY(letak.getY());
+        hungryCountdown--;
     }
     else if (Map::getMapEl(letak.getX(),letak.getY() + 1) == "-") { ///kanan
         letak.setX(letak.getX());
         letak.setY(letak.getY() + 1);
+        hungryCountdown--;
     }
     else if (Map::getMapEl(letak.getX() + 1,letak.getY()) == "-") { ///bawah
         letak.setX(letak.getX() + 1);
         letak.setY(letak.getY());
+        hungryCountdown--;
     }
     else if (Map::getMapEl(letak.getX(),letak.getY() - 1) == "-") {
         letak.setX(letak.getX());
         letak.setY(letak.getY() - 1);
+        hungryCountdown--;
     }
 }
 
