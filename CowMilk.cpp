@@ -9,6 +9,6 @@
 #include <stdio.h>
 #include "CowMilk.hpp"
 
-CowMilk::CowMilk(int price, int amount) : FarmProduct(price,amount)
+CowMilk::CowMilk(std::string name, int price, int amount) : FarmProduct(name,price,amount)
 {
 }

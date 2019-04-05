@@ -1,9 +1,8 @@
-#include "FarmProduct.hpp"
 #ifndef DuckMeat_hpp
 #define DuckMeat_hpp
-
+#include "FarmProduct.hpp"
 #include <stdio.h>
 class DuckMeat : public FarmProduct{
-    DuckMeat(int price, int amount);
+    DuckMeat(std::string name,int price, int amount);
 };
 #endif /* ChickenEgg_hpp */

@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include "GoatMilk.hpp"
 
-GoatMilk::GoatMilk(int price,int amount) : FarmProduct(price,amount)
+GoatMilk::GoatMilk(std::string name,int price,int amount) : FarmProduct(name,price,amount)
 {
+    
 }

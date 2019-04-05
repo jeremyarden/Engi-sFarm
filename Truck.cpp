@@ -1,10 +1,9 @@
 #include "Truck.hpp"
 
 //ctor truck
-Truck::Truck(Point P) : Facility(P)
+Truck::Truck(Point P) : Facility(P), load(capacity)
 {
     totalPrice = 0;
-    load = LinkedList<Product>(capacity);
 }
 void Truck::putLoad(Product p)
 {

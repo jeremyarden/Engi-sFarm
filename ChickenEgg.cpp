@@ -7,9 +7,9 @@
 //
 
 #include <stdio.h>
-#include "ChickenEgg.hpp"
+#include "ChickenEgg.hpp" 
 
-ChickenEgg::ChickenEgg(int price,int amount) : FarmProduct(price,amount)
+ChickenEgg::ChickenEgg(std::string name,int price,int amount) : FarmProduct(name,price,amount)
 {
     
 }

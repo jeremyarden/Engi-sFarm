@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include "GoatCheese.hpp"
 
-GoatCheese::GoatCheese(int price, int amount) : FarmProduct(price,amount)
+GoatCheese::GoatCheese(std::string name,int price, int amount) : SideProduct(name,price,amount)
 {
+    addRecipePart(* new GoatMilk("susuKambing",1000,1));
 }

@@ -8,6 +8,6 @@
 #include "CowCheese.hpp"
 #include <stdio.h>
 
-CowCheese::CowCheese(int price, int amount) : SideProduct(price,amount)
+CowCheese::CowCheese(std::string name, int price, int amount) : SideProduct(name, price,amount) 
 {
 }

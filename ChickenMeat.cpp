@@ -8,7 +8,7 @@
 
 #include "ChickenMeat.hpp"
 
-ChickenMeat :: ChickenMeat(int price, int amount) : FarmProduct(price,amount)
+ChickenMeat :: ChickenMeat(std::string name,int price, int amount) : FarmProduct(name,price,amount)
 {
     
 }

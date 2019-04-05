@@ -1,9 +1,10 @@
-#include "FarmProduct.hpp"
+
 #ifndef Pork_hpp
 #define Pork_hpp
-
+#include "FarmProduct.hpp"
 #include <stdio.h>
 class ChickenEgg : public FarmProduct{
-    ChickenEgg(int price,int amount);
+public:
+    ChickenEgg(std::string name,int price,int amount);
 };
 #endif /* ChickenEgg_hpp */

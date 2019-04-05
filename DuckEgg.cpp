@@ -9,6 +9,6 @@
 #include <stdio.h>
 #include "DuckEgg.hpp"
 
-DuckEgg::DuckEgg(int price,int amount) : FarmProduct(price,amount)
+DuckEgg::DuckEgg(std::string name,int price,int amount) : FarmProduct(name,price,amount) 
 {
 }

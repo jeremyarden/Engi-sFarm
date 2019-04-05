@@ -48,11 +48,11 @@ Product Player::getItem(std::string name)
 {
     int idx;
     idx = 0;
-    while (backpack.get(idx).getProductName() != name && idx<backpack.getNeff() - 1)
+    while (backpack.get(idx).getProductName() != name && idx<backpack.getNeff() - 1) 
     {
         idx++;
     }
-    if(backpack.get(idx).getProductName() == name)
+    if(backpack.get(idx).getProductName() == name) 
     {
         return backpack.get(idx);
     }else
@@ -85,5 +85,26 @@ void Player::removeItem(std::string name)
 {
     backpack.remove(getItem(name));
 }
+
+void Player::move(std::string direction)
+{
+    if(direction == "UP")
+    {
+        position.setX(position.getX()-1);
+    }
+    else if (direction == "DOWN")
+    {
+        position.setX(position.getX()+1);
+    }
+    else if (direction == "RIGHT")
+    {
+        position.setY(position.getY()+1);
+    }
+    else if (direction == "LEFT")
+    {
+        position.setY(position.getY()-1);
+    }
+}
+
 
 

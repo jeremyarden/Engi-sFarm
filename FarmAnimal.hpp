@@ -26,7 +26,7 @@ class FarmAnimal {
         void Eat();
 
         /** getter waktu lapar */
-        int static getHungryCountdown() const; /* ditambahin static (perubahan) */
+    int static getHungryCountdown() ; /* ditambahin static (perubahan) */
         /** setter waktu lapar */ 
          /* setter dihapus (perubahan) */
         /** getter posisi binatang */
@@ -40,6 +40,6 @@ class FarmAnimal {
         /** posisi binatang dengan kelas Cell */
         /* cell dihapus (perubahan) */
         /** untuk bergerak menggunakan point */
-        Point letak; /* perubahan */
+        static Point letak; /* perubahan */
 };
 #endif

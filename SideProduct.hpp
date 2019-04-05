@@ -14,12 +14,12 @@
 #include <stdio.h>
 class SideProduct : public Product{
 private:
-    LinkedList<FarmProduct> recipe;
+    LinkedList<Product> recipe;
 public:
     /**ctor default untuk SideProduct*/
-    SideProduct(int price, int amount);
+    SideProduct(std::string name,int price, int amount);
     /**Untuk mengambil isi resep pembuatan SideProduct*/
-    FarmProduct getRecipePart(int idx);
+    Product getRecipePart(int idx);
    /**Memasukan resep yang diperlukan*/
     void addRecipePart(FarmProduct el);
     

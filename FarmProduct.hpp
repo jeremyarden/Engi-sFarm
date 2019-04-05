@@ -19,7 +19,7 @@ public:
     /**
      ctor default untuk FarmProduct
      */
-    FarmProduct(int price, int amount);
+    FarmProduct(std::string name,int price, int amount);      
     
 };
 #endif /* FarmProduct_hpp */

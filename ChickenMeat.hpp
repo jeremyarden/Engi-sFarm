@@ -13,6 +13,6 @@
 class ChickenMeat : public FarmProduct
 {
 public:
-    ChickenMeat(int price, int amount);
+    ChickenMeat(std::string name,int price, int amount); 
 };
 #endif /* ChickenMeat_hpp */

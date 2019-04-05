@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 class CowCheese : public SideProduct{
-    CowCheese(int price, int amount);
+public:
+    CowCheese(std::string name,int price, int amount);
 };
 #endif /* ChickenEgg_hpp */

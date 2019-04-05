@@ -7,7 +7,7 @@
 //
 
 #include "FarmProduct.hpp"
-FarmProduct::FarmProduct(int price, int amount) : Product(price,amount)
+FarmProduct::FarmProduct(std::string name,int price, int amount) : Product(name,price,amount)  
 {
     
 }

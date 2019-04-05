@@ -5,6 +5,9 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include "Renderable.hpp"
+#include "Coop.hpp"
+#include "Grassland.hpp"
 /**
  Map Class. Kelas untuk membuat peta yang digunakan untuk permainan.
  */
@@ -13,6 +16,7 @@ private:
     const static int MAP_LENGTH = 10;
     const static int MAP_WIDTH = 11;
     char map[MAP_LENGTH][MAP_WIDTH];
+    Renderable * entity[MAP_LENGTH*MAP_WIDTH];
 public:
     /**
      Constructor map yang membuat peta dari file eksternal

@@ -9,9 +9,9 @@
 #include <stdio.h>
 #include "ChickenCordonBleu.hpp"
 
-ChickenCordonBleu::ChickenCordonBleu(int price,int amount) : SideProduct(price,amount)
+ChickenCordonBleu::ChickenCordonBleu(std::string name, int price,int amount) : SideProduct(name,price,amount)
 {
-    addRecipePart(* new CowMilk(1000,1));
-    addRecipePart(* new ChickenMeat(2000,2));
-    addRecipePart(* new CowCheese(3000,1));
+    addRecipePart(* new CowMilk("susuSapi",1000,1));
+    addRecipePart(* new ChickenMeat("dagingAyam",2000,2));
+    addRecipePart(* new CowCheese("kejuSapi",3000,1));
 }

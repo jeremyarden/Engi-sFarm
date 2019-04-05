@@ -8,12 +8,12 @@
 
 #include "SideProduct.hpp"
 
-SideProduct::SideProduct(int price, int amount) : recipe(3), Product(price,amount)
+SideProduct::SideProduct(std::string name,int price, int amount) : recipe(3), Product(name,price,amount)
 {
     
 }
 
-FarmProduct SideProduct::getRecipePart(int idx)
+Product SideProduct::getRecipePart(int idx)
 {
     return recipe.get(idx);
 }

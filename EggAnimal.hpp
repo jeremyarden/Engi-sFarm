@@ -1,4 +1,4 @@
-#include "FarmProduct.hpp"
+#include "Product.hpp"
 #include "FarmAnimal.hpp"
 
 #ifndef EggAnimal_hpp

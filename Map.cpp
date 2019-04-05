@@ -17,6 +17,19 @@ Map::Map(std::string filename)
             for(it = line.begin(); it!=line.end();it++)
             {
                 map[row][col] = *it;
+                switch (*it) {
+                    case 'o':
+                        entity[(MAP_WIDTH*row)+col] = new Coop(*new Point(row,col));
+                        break;
+                    case '-':
+                        entity[(MAP_WIDTH*row)+col] = new Grassland(*new Point(row,col));
+                        break;
+                    case 'o':
+                        entity[(MAP_WIDTH*row)+col] = new Coop(*new Point(row,col));
+                        break;
+                    default:
+                        break;
+                }
                 col++;
             }
             row++;

@@ -9,5 +9,5 @@
 #include <stdio.h>
 #include "GoatMeat.hpp"
 
-GoatMeat::GoatMeat(int price, int amount) : FarmProduct(price,amount)
-{}
+GoatMeat::GoatMeat(std::string name,int price, int amount) : FarmProduct(name,price,amount)
+{} 

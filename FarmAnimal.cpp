@@ -8,30 +8,26 @@ FarmAnimal::FarmAnimal() {
 
 void FarmAnimal::Move() {
     /* harus dicek dulu ada hewan atau sesuatu ga di dekatnya */
-    if (Map::getMapEl(letak.getX() - 1,letak.getY()) == "-") { ///atas
+    if (Map::getMapEl(letak.getX() -  1,letak.getY()) == "-") { ///atas
         letak.setX(letak.getX() - 1);
         letak.setY(letak.getY());
-        hungryCountdown--;
     }
     else if (Map::getMapEl(letak.getX(),letak.getY() + 1) == "-") { ///kanan
         letak.setX(letak.getX());
         letak.setY(letak.getY() + 1);
-        hungryCountdown--;
     }
     else if (Map::getMapEl(letak.getX() + 1,letak.getY()) == "-") { ///bawah
         letak.setX(letak.getX() + 1);
         letak.setY(letak.getY());
-        hungryCountdown--;
     }
     else if (Map::getMapEl(letak.getX(),letak.getY() - 1) == "-") {
         letak.setX(letak.getX());
         letak.setY(letak.getY() - 1);
-        hungryCountdown--;
     }
 }
 
 bool FarmAnimal::isHungry() {
-    return (getHungryCountDown() <= 5);
+    return (FarmAnimal::getHungryCountdown() <= 5);
 }
 
 void FarmAnimal::Eat() {
@@ -59,7 +55,7 @@ void FarmAnimal::Eat() {
     }
 }
 
-int getHungryCountDown() const {
+int getHungryCountDown() {
     return hungryCountdown;
 }
 
