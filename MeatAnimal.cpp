@@ -4,6 +4,6 @@ MeatAnimal::MeatAnimal() {
     meat = true;
 }
 
-bool MeatAnimal::MeatAnimal() {
+bool MeatAnimal::isMeatAnimal() {
     return (meat);
 }
