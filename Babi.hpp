@@ -1,6 +1,7 @@
 #include "FarmProduct.hpp"
 #include "MeatAnimal.hpp"
 #include "Pork.hpp"
+#include "Renderable.hpp"
 
 #ifndef Babi_hpp
 #define Babi_hpp

@@ -3,6 +3,7 @@
 #include "MilkAnimal.hpp"
 #include "GoatMilk.hpp"
 #include "GoatMeat.hpp"
+#include "Renderable.hpp"
 
 #ifndef Kambing_hpp
 #define KAmbing_hpp

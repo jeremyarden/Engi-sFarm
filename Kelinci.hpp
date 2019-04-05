@@ -1,6 +1,7 @@
 #include "FarmProduct.hpp"
 #include "MeatAnimal.hpp"
 #include "RabbitMeat.hpp"
+#include "Renderable.hpp"
 
 #ifndef Kelinci_hpp
 #define Kelinci_hpp

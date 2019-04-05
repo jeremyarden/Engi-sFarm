@@ -3,6 +3,7 @@
 #include "EggAnimal.hpp"
 #include "DuckEgg.hpp"
 #include "DuckMeat.hpp"
+#include "Renderable.hpp"
 
 #ifndef Bebek_hpp
 #define Bebek_hpp

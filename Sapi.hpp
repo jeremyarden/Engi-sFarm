@@ -3,6 +3,7 @@
 #include "MilkAnimal.hpp"
 #include "Beef.hpp"
 #include "CowMilk.hpp"
+#include "Renderable.hpp"
 
 #ifndef Sapi_hpp
 #define Sapi_hpp
