@@ -6,6 +6,7 @@ FarmAnimal::FarmAnimal() {
     letak.setX(random(1,50)); //harus diganti jadi sesuai ukuran barn
     letak.setY(random(1,50)); //harus diganti jadi sesuai ukuran barn
     hungryCountdown = random(5,10);
+    ada = true;
 }
 
 void FarmAnimal::Move() {
@@ -18,7 +19,7 @@ bool FarmAnimal::isHungry() {
 
 void FarmAnimal::Eat() {
     if (isHungry()) { /* dicek dulu dia ada di grass apa ngga, kalo iya bakal ngereset hungryCountdown */
-
+        if (el[X][Y] == "")
     }
 }
 

@@ -1,8 +1,8 @@
-#include "Product.hpp"
 #include "EggAnimal.hpp"
 #include "MeatAnimal.hpp"
 #include "ChickenEgg.hpp"
 #include "ChickenMeat.hpp"
+#include "FarmProduct.hpp"
 
 #ifndef Ayam_hpp
 #define Ayam_hpp

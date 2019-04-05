@@ -1,5 +1,6 @@
 #include "FarmProduct.hpp"
-#include "Cell.hpp"
+#include "Point.hpp"
+#include "Map.hpp"
 #include <stdlib.h>
 
 #ifndef FarmAnimal_hpp
