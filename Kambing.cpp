@@ -1,7 +1,8 @@
 #include "Kambing.hpp"
 
 Kambing::Kambing() : susuKambing("susuKambing",4000,0), dagingKambing("dagingKambing",5000,1) {
-
+    letak.setX(5);
+    letak.setY(6);
 } ///ctor
 
 void Kambing::Talk() {

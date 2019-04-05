@@ -1,7 +1,8 @@
 #include "Babi.hpp"
 
 Babi::Babi() : dagingBabi("dagingBabi",5000,1) {
-
+    letak.setX(8);
+    letak.setY(2);
 } ///ctor
 
 void Babi::Talk() {

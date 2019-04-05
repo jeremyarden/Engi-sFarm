@@ -1,7 +1,8 @@
 #include "Bebek.hpp"
 
 Bebek::Bebek() : telurBebek("telurBebek",3000,0), dagingBebek("dagingBebek",4000,1) {
-
+    letak.setX(7);
+    letak.setY(4);
 } ///ctor
 
 void Bebek::Talk() {

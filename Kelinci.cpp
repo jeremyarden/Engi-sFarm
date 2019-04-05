@@ -1,7 +1,8 @@
 #include "Kelinci.hpp"
 
 Kelinci::Kelinci() : dagingKelinci("dagingKelinci",4000,1) {
-
+    letak.setX(6);
+    letak.setY(6);
 } ///ctor
 
 void Kelinci::Talk() {

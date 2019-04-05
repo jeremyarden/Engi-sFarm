@@ -1,7 +1,8 @@
 #include "Sapi.hpp"
 
 Sapi::Sapi() : susuSapi("susuSapi",4000,0), dagingSapi("dagingSapi",6000,1) {
-
+    letak.setX(5);
+    letak.setY(3);
 } ///ctor
 
 void Sapi::Talk() {
