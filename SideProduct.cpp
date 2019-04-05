@@ -7,3 +7,18 @@
 //
 
 #include "SideProduct.hpp"
+
+SideProduct::SideProduct(int price, int amount) : recipe(3), Product(price,amount)
+{
+    
+}
+
+FarmProduct SideProduct::getRecipePart(int idx)
+{
+    return recipe.get(idx);
+}
+
+void SideProduct::addRecipePart(FarmProduct el)
+{
+    recipe.add(el);
+}

@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 class RabbitMeat : public FarmProduct{
-    RabbitMeat();
-}
+public:
+    RabbitMeat(int price, int amount);
+};
 #endif /* ChickenEgg_hpp */
