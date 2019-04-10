@@ -8,6 +8,13 @@
 
 #include "Product.hpp"
 
+Product::Product()
+{
+    name = "";
+    price = 0;
+    amount = 0;
+}
+
 Product::Product(std::string name, int price, int amount)
 {
     this->name = name;

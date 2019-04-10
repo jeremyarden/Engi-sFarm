@@ -1,9 +1,11 @@
 
 #ifndef Player_hpp
 #define Player_hpp
+#include "Renderable.hpp"
 #include "Product.hpp"
 #include "LinkedList.hpp"
 #include "Point.hpp"
+#include "Map.hpp"
 #include <string>
 #include <stdio.h>
 
@@ -11,12 +13,12 @@
  Player class. Kelas untuk mendefinisikan player yang akan digunakan untuk
  memainkan permainan.
  */
-class Player{
+class Player : public Renderable{
 private:
     int money;      /**Menyimpan jumlah uang yang dipunyai pemain*/
     int water;      /**Menyimpan jumlah air yang dipunyai pemain*/
     Point position;  /**Menyimpan dimana posisi pemain*/
-    LinkedList<Product> backpack;   /**menyimpan produk-produk yang dihasilkan dari hewan atau mixer*/
+    LinkedList<Product *> backpack;   /**menyimpan produk-produk yang dihasilkan dari hewan atau mixer*/
 
 public:
     
@@ -93,7 +95,7 @@ public:
     /**
      Pemain bisa berbicara kepada hewan dan hewan akan  bersuara sesuai jenisnya.
      */
-    void talk();
+    void talk(Map m,std::string direction);
     
     /**
      ◦    Pemain bisa berinteraksi dengan berbagai hewan dan fasilitas yang berbeda-beda:
@@ -120,6 +122,12 @@ public:
      produk dalam backpack dan mengasilkan sebuah Side Product.
      */
     void mix();
-   
+    
+    void render(Map m);
+    
+    bool isAnimal(char El);
+    
+    bool isFaci(char El);
+    
 };
 #endif /* Player_hpp */

@@ -1,26 +1,26 @@
 #include "FarmAnimal.hpp"
-#include <stdlib.h>
-#include "tesRand.cpp"
 
+int FarmAnimal::hungryCountdown = 0;
+Point FarmAnimal::letak(0,0);
 FarmAnimal::FarmAnimal() {
-    hungryCountdown = random(5,10);
+    hungryCountdown = 5;
 }
 
-void FarmAnimal::Move() {
+void FarmAnimal::Move(Map m) {
     /* harus dicek dulu ada hewan atau sesuatu ga di dekatnya */
-    if (Map::getMapEl(letak.getX() -  1,letak.getY()) == "-") { ///atas
+    if (m.getMapEl(letak.getX() -  1,letak.getY()) == '-') { ///atas
         letak.setX(letak.getX() - 1);
         letak.setY(letak.getY());
     }
-    else if (Map::getMapEl(letak.getX(),letak.getY() + 1) == "-") { ///kanan
+    else if (m.getMapEl(letak.getX(),letak.getY() + 1) == '-') { ///kanan
         letak.setX(letak.getX());
         letak.setY(letak.getY() + 1);
     }
-    else if (Map::getMapEl(letak.getX() + 1,letak.getY()) == "-") { ///bawah
+    else if (m.getMapEl(letak.getX() + 1,letak.getY()) == '-') { ///bawah
         letak.setX(letak.getX() + 1);
         letak.setY(letak.getY());
     }
-    else if (Map::getMapEl(letak.getX(),letak.getY() - 1) == "-") {
+    else if (m.getMapEl(letak.getX(),letak.getY() - 1) == '-') {
         letak.setX(letak.getX());
         letak.setY(letak.getY() - 1);
     }
@@ -30,32 +30,32 @@ bool FarmAnimal::isHungry() {
     return (FarmAnimal::getHungryCountdown() <= 5);
 }
 
-void FarmAnimal::Eat() {
+void FarmAnimal::Eat(Map m) {
     if (isHungry()) { /* dicek dulu dia ada di grass apa ngga, kalo iya bakal ngereset hungryCountdown */
-        if (Map::getMapEl(letak.getX() - 1,letak.getY()) == "*") { ///atas
+        if (m.getMapEl(letak.getX() - 1,letak.getY()) == '*') { ///atas
             letak.setX(letak.getX() - 1);
             letak.setY(letak.getY());
-            Land::eatGrass();
+           // m.getEntity(letak.getX(), letak.getY())->eatGrass();
         }
-        else if (Map::getMapEl(letak.getX(),letak.getY() + 1) == "*") { ///kanan
+        else if (m.getMapEl(letak.getX(),letak.getY() + 1) == '*') { ///kanan
             letak.setX(letak.getX());
             letak.setY(letak.getY() + 1);
-            Land::eatGrass();
+            //m.getEntity(letak.getX(), letak.getY()).eatGrass();
         }
-        else if (Map::getMapEl(letak.getX() + 1,letak.getY()) == "*") { ///bawah
+        else if (m.getMapEl(letak.getX() + 1,letak.getY()) == '*') { ///bawah
             letak.setX(letak.getX() + 1);
             letak.setY(letak.getY());
-            Land::eatGrass();
+            //Land::eatGrass();
         }
-        else if (Map::getMapEl(letak.getX(),letak.getY() - 1) == "*") {
+        else if (m.getMapEl(letak.getX(),letak.getY() - 1) == '*') {
             letak.setX(letak.getX());
             letak.setY(letak.getY() - 1);
-            Land::eatGrass();
+            //Land::eatGrass();
         }
     }
 }
 
-int getHungryCountDown() {
+int FarmAnimal::getHungryCountdown() {
     return hungryCountdown;
 }
 

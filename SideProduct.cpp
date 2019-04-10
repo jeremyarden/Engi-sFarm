@@ -18,7 +18,7 @@ Product SideProduct::getRecipePart(int idx)
     return recipe.get(idx);
 }
 
-void SideProduct::addRecipePart(FarmProduct el)
+void SideProduct::addRecipePart(Product el)
 {
     recipe.add(el);
 }

@@ -8,7 +8,7 @@
 #include "Steak.hpp"
 #include <stdio.h>
 
-Steak::Steak(int price, int amount) : SideProduct(price,amount)
+Steak::Steak(std::string name, int price, int amount) : SideProduct(name,price,amount)
 {
-    addRecipePart(*new Beef(100,1));
+    addRecipePart(*new Beef("dagingSapi",100,1));
 }

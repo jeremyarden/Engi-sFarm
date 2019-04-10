@@ -18,3 +18,8 @@ void Truck::putLoad(Product p)
     }
     
 }
+
+void Truck::render()
+{
+    
+}

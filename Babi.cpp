@@ -13,10 +13,10 @@ bool Babi::isBabiDead() {
     return (FarmAnimal::getHungryCountdown() < 1);
 } ///penanda babi hidup atau mati
 
-Pork Babi::getDagingBabi() const {
-    return dagingBabi;
+Pork Babi::getDagingBabi(){
+    return dagingBabi; 
 } ///getter produk pork
 
-void Babi::render() {
-    Map::setMapEl(letak.getX(),letak.getY(),"P");
+void Babi::render(Map m) {
+    m.setMapEl(letak.getX(),letak.getY(),'P');
 }

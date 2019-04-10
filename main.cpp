@@ -8,8 +8,10 @@
 
 #include <iostream>
 
+#include "Map.hpp"
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    Map m("/Users/abiyyuismunandar/Documents/OOP/TUBES/Engi's Farm/Peta/peta.txt");
+    m.drawMap();
     return 0;
 }

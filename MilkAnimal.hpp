@@ -1,10 +1,8 @@
-#include "FarmProduct.hpp"
-#include "FarmAnimal.hpp"
-
 #ifndef MilkAnimal_hpp
 #define MilkAnimal_hpp
-
-class MilkAnimal : public FarmAnimal {
+#include "FarmAnimal.hpp"
+class MilkAnimal : public FarmAnimal
+{
     public:
         /** ctor */
         MilkAnimal(); 

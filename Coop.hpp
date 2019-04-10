@@ -2,10 +2,9 @@
 #define _COOP_HPP
 
 #include "Land.hpp"
-#include "Renderable.hpp"
 using namespace std;
 
-class Coop : public Land, public Renderable
+class Coop : public Land
 {
     public:
         Coop(Point P);

@@ -1,19 +1,16 @@
-#include "Product.hpp"
+#ifndef Sapi_hpp
+#define Sapi_hpp
 #include "MeatAnimal.hpp"
 #include "MilkAnimal.hpp"
 #include "Beef.hpp"
 #include "CowMilk.hpp"
-#include "Renderable.hpp"
-
-#ifndef Sapi_hpp
-#define Sapi_hpp
-
-class Sapi : public MeatAnimal, public MilkAnimal {
+class Sapi : public MeatAnimal, public MilkAnimal
+{
     public:
         Sapi(); ///ctor
         void Talk(); ///sapi mengeluarkan suara "moo"
         bool isSapiDead(); ///penanda sapi hidup atau mati
-        void render(); ///override dr renderable (perubahan)
+        void render(Map m); ///override dr renderable (perubahan)
 
         Beef getDagingSapi() const; ///getter daging sapi
         ///setter daging sapi

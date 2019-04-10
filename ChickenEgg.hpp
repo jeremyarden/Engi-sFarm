@@ -1,6 +1,6 @@
 
-#ifndef Pork_hpp
-#define Pork_hpp
+#ifndef ChickenEgg_hpp
+#define ChickenEgg_hpp
 #include "FarmProduct.hpp"
 #include <stdio.h>
 class ChickenEgg : public FarmProduct{

@@ -9,7 +9,7 @@
 using namespace std;
 
 class Truck : public Facility
-{
+{ 
     protected:
         int idleTime = 5;
         int capacity = 5;
@@ -19,6 +19,7 @@ class Truck : public Facility
         Truck(Point P);
         void putLoad(Product p);
         int getPrice();
+        void render();
 };
 
 #endif

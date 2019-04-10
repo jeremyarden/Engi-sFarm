@@ -6,7 +6,7 @@ Kelinci::Kelinci() : dagingKelinci("dagingKelinci",4000,1) {
 } ///ctor
 
 void Kelinci::Talk() {
-    printf("cit cit")
+    printf("cit cit");
 } ///kelinci berbicara "cit cit"
 
 bool Kelinci::isKelinciDead() {
@@ -18,5 +18,5 @@ RabbitMeat Kelinci::getDagingKelinci() const {
 } ///getter daging kelinci
 
 void Kelinci::render() {
-    Map::setMapEl(letak.getX(),letak.getY(),"R");
+    //Map::setMapEl(letak.getX(),letak.getY(),"R");
 }

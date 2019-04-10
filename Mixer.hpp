@@ -9,6 +9,7 @@ class Mixer : public Facility
 {
     public:
         Mixer(Point P);
+        void render();
 };
 
 #endif

@@ -1,12 +1,11 @@
-#include "FarmProduct.hpp"
-#include "MeatAnimal.hpp"
-#include "RabbitMeat.hpp"
-#include "Renderable.hpp"
+
 
 #ifndef Kelinci_hpp
 #define Kelinci_hpp
-
-class Kelinci : public MeatAnimal {
+#include "MeatAnimal.hpp"
+#include "RabbitMeat.hpp"
+class Kelinci : public MeatAnimal
+{
     public:
         Kelinci(); ///ctor
         void Talk(); ///kelinci berbicara "cit cit"

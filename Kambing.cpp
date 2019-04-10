@@ -22,6 +22,6 @@ GoatMeat Kambing::getDagingKambing() const {
     return dagingKambing;
 } ///getter daging kambing
 
-void Kambing::render() {
-    Map::setMapEl(letak.getX(),letak.getY(),"G");
+void Kambing::render(Map m) {
+    m.setMapEl(letak.getX(),letak.getY(),'G');
 }

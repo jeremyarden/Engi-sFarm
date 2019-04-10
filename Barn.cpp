@@ -12,3 +12,8 @@ Barn::Barn(Point P) : Land(P)
 {
     
 }
+void Barn::render()
+{
+    
+}
+

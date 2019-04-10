@@ -57,7 +57,7 @@ public:
      */
     int find(T el)
     {
-        int i;
+        int i = 0;
         while (arr[i] != el && i < neff - 1)
         {
             i++;

@@ -1,8 +1,8 @@
 #include "Bebek.hpp"
 
 Bebek::Bebek() : telurBebek("telurBebek",3000,0), dagingBebek("dagingBebek",4000,1) {
-    letak.setX(7);
-    letak.setY(4);
+    letak.setX(2);
+    letak.setY(2);
 } ///ctor
 
 void Bebek::Talk() {
@@ -22,6 +22,6 @@ DuckMeat Bebek::getDagingBebek() const {
     return dagingBebek;
 } ///getter produkk daging bebek
 
-void Bebek::render() {
-    Map::setMapEl(letak.getX(),letak.getY(),"D");
+void Bebek::render(Map m) {
+    m.setMapEl(letak.getX(),letak.getY(),'D');
 }

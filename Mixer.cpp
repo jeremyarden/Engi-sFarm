@@ -4,3 +4,8 @@ Mixer::Mixer(Point P) : Facility(P)
 {
 
 }
+
+void Mixer::render()
+{
+    
+}

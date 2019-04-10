@@ -5,6 +5,6 @@
 #include <stdio.h>
 class Beef : public FarmProduct{
 public:
-    Beef(int price, int amount);
+    Beef(std::string name,int price, int amount);
 };
 #endif /* ChickenEgg_hpp */

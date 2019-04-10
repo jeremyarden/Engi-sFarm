@@ -22,6 +22,6 @@ CowMilk Sapi::getSusuSapi() const {
     return susuSapi;
 } ///getter susu sapi
 
-void Sapi::render() {
-    Map::setMapEl(letak.getX(),letak.getY(),"S");
+void Sapi::render(Map m) {
+    m.setMapEl(letak.getX(),letak.getY(),'S');
 }

@@ -1,19 +1,17 @@
-#include "FarmProduct.hpp"
+#ifndef Bebek_hpp
+#define Bebek_hpp
 #include "MeatAnimal.hpp"
 #include "EggAnimal.hpp"
 #include "DuckEgg.hpp"
 #include "DuckMeat.hpp"
-#include "Renderable.hpp"
 
-#ifndef Bebek_hpp
-#define Bebek_hpp
 
-class Bebek : public MeatAnimal, public EggAnimal, public Renderable {
+class Bebek : public MeatAnimal, public EggAnimal{
     public:
         Bebek(); ///ctor
         void Talk(); ///bebek mengeluarkan suara "kwek"
         bool isBebekDead(); ///penanda bebek hidup atau mati
-        void render(); ///override dr renderable (perubahan)
+        void render(Map m); ///override dr renderable (perubahan)
 
         DuckEgg getTelurBebek() const; ///getter produk telur bebek
         ///setter telur bebek

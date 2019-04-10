@@ -8,6 +8,6 @@
 #include "Beef.hpp"
 #include <stdio.h>
 
-Beef::Beef(int price,int amount) : FarmProduct(price,amount)
+Beef::Beef(std:: string name,int price,int amount) : FarmProduct(name,price,amount)
 {
 }

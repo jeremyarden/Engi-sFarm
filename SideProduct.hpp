@@ -21,7 +21,7 @@ public:
     /**Untuk mengambil isi resep pembuatan SideProduct*/
     Product getRecipePart(int idx);
    /**Memasukan resep yang diperlukan*/
-    void addRecipePart(FarmProduct el);
+    void addRecipePart(Product el);
     
 };
 #endif /* SideProduct_hpp */

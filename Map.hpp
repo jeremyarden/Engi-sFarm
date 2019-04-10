@@ -1,13 +1,36 @@
-
-
 #ifndef Map_hpp
 #define Map_hpp
 #include <string>
 #include <iostream>
 #include <fstream>
+#include "Point.hpp"
 #include "Renderable.hpp"
+
+/*
+class Coop;
+class Barn;
+class Truck;
+class Mixer;
+class Grassland;
+class Bebek;
+class Kambing;
+class Kelinci;
+class Ayam;
+class Babi;
+#include "Ayam.hpp"
+#include "Babi.hpp"
+#include "Bebek.hpp"
+#include "Kambing.hpp"
+#include "Kelinci.hpp"
+*/
+
 #include "Coop.hpp"
+#include "Barn.hpp"
+#include "Truck.hpp"
+#include "Mixer.hpp"
 #include "Grassland.hpp"
+
+
 /**
  Map Class. Kelas untuk membuat peta yang digunakan untuk permainan.
  */
@@ -35,5 +58,6 @@ public:
      dengan isinya
      */
     void drawMap();
+    Renderable* getEntity(int i, int j);
 };
 #endif /* Map_hpp */

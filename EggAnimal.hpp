@@ -1,8 +1,6 @@
-#include "Product.hpp"
-#include "FarmAnimal.hpp"
-
 #ifndef EggAnimal_hpp
 #define EggAnimal_hpp
+#include "FarmAnimal.hpp"
 
 class EggAnimal : public FarmAnimal {
     public:

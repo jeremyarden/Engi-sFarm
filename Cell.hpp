@@ -2,13 +2,16 @@
 #define _CELL_HPP
 
 #include "Point.hpp"
-class Cell
+#include "Renderable.hpp"
+
+class Cell : public Renderable
 {
     private:
         int x;
         int y;
     public:
         Cell(Point P);
+        void talk();
 };
 
 #endif

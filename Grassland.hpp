@@ -2,14 +2,14 @@
 #define _GRASSLAND_HPP
 
 #include "Land.hpp"
-#include "Renderable.hpp"
+#include "Point.hpp"
 using namespace std;
 
-class Grassland : public Land, public Renderable
+class Grassland : public Land
 {
     public:
-        Grassland();
-        void render();
+        Grassland(Point P);
+        void render(); 
 };
 
 #endif

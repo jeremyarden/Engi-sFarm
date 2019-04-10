@@ -3,6 +3,7 @@
 #include "FarmProduct.hpp"
 #include <stdio.h>
 class DuckMeat : public FarmProduct{
+public:
     DuckMeat(std::string name,int price, int amount);
 };
 #endif /* ChickenEgg_hpp */

@@ -9,3 +9,4 @@ void Land::eatGrass()
 {
     grass = false;
 }
+

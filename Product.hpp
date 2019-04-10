@@ -22,6 +22,9 @@ private:
     int amount;         /**Menyimpan banyak produk*/
     
 public:
+    /**Product default ctr
+     */
+    Product();
     /**
      User defined constructor untuk menginisialisasi produk-produk yang akan dijual
      */
