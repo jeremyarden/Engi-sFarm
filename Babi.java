@@ -2,7 +2,7 @@ class Babi extends FarmAnimal implements MeatAnimal {
     protected Pork dagingBabi;
     
     Babi() {
-        dagingBabi("dagingBabi",5000,1);
+        dagingBabi();
         letak.setX(8);
         letak.setY(2);
     } ///ctor
