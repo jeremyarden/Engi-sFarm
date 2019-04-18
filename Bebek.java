@@ -3,8 +3,8 @@ class Bebek extends FarmAnimal implements MeatAnimal, EggAnimal {
     protected DuckMeat dagingBebek;
     
     Bebek() {
-        telurBebek("telurBebek",3000,0);
-        dagingBebek("dagingBebek",4000,1);
+        telurBebek();
+        dagingBebek();
         letak.setX(2);
         letak.setY(2);
     } ///ctor
