@@ -3,8 +3,8 @@ class Kambing extends FarmAnimal implements MeatAnimal, MilkAnimal {
     protected CowMilk susuSapi; ///produk yang dihasilkan berupa susu sapi
     
     Sapi() {
-        susuSapi("susuSapi",4000,0);
-        dagingSapi("dagingSapi",6000,1);
+        susuSapi();
+        dagingSapi();
         letak.setX(5);
         letak.setY(3);
     } ///ctor
