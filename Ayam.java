@@ -3,8 +3,8 @@ class Ayam extends FarmAnimal implements MeatAnimal, EggAnimal {
     protected ChickenMeat dagingAyam; ///produk yang dihasilkan berupa daging ayam
     
     Ayam() {
-        telurAyam("telurAyam",2000,0);
-        dagingAyam("dagingAyam",3000,1);
+        telurAyam();
+        dagingAyam();
         letak.setX(0);
         letak.setY(0);
     }
