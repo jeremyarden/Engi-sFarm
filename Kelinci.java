@@ -2,7 +2,7 @@ class Kelinci extends FarmAnimal implements MeatAnimal {
     protected RabbitMeat dagingKelinci; ///produk yang dihasilkan berupa daging kelinci
     
     Kelinci() {
-        dagingKelinci("dagingKelinci",4000,1);
+        dagingKelinci();
         letak.setX(6);
         letak.setY(6);
     } ///ctor
