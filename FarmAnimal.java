@@ -1,10 +1,15 @@
-class FarmAnimal {
+package animal;
+
+import game.Map;
+import game.Point;
+
+public class FarmAnimal {
     protected static int hungryCountdown;
     protected static Point letak;
     
     FarmAnimal() {
         hungryCountdown = 5;
-        letak(0,0);
+        letak = new Point(0,0);
     }
     public void move(Map m) {
         /* harus dicek dulu ada hewan atau sesuatu ga di dekatnya */
