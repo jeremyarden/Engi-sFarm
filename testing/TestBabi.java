@@ -15,13 +15,13 @@ public class TestBabi {
     @Test
     public void tesCtor() {
         babi = new Babi();
-        assertEquals("Tes Name of Daging","dagingBabi",babi.getMeat().getProdName());
-        assertEquals("Tes Price of Daging",3000,babi.getMeat().getProdPrice());
-        assertEquals("Tes amount of Daging",1,babi.getMeat().getProdAmount());
+        assertEquals("Tes Name of Daging","dagingBabi",babi.getDagingBabi().getProdName());
+        assertEquals("Tes Price of Daging",5000,babi.getDagingBabi().getProdPrice());
+        assertEquals("Tes amount of Daging",1,babi.getDagingBabi().getProdAmount());
         assertEquals("Tes posisi X",8,babi.getPosisiX());
         assertEquals("Tes posisi Y",2,babi.getPosisiY());
     }
-
+    
     @Test
     public void tesIsBabiDead() {
         babi = new Babi();
@@ -31,9 +31,9 @@ public class TestBabi {
     @Test
     public void tesGetMeat() {
         babi = new Babi();
-        assertEquals("Tes Name of Daging","dagingBabi",babi.getMeat().getProdName());
-        assertEquals("Tes Price of Daging",3000,babi.getMeat().getProdPrice());
-        assertEquals("Tes amount of Daging",1,babi.getMeat().getProdAmount());
+        assertEquals("Tes Name of Daging","dagingBabi",babi.getDagingBabi().getProdName());
+        assertEquals("Tes Price of Daging",5000,babi.getDagingBabi().getProdPrice());
+        assertEquals("Tes amount of Daging",1,babi.getDagingBabi().getProdAmount());
     }
 
     @Test
