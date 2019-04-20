@@ -15,12 +15,12 @@ public class TestAyam  {
     @Test
     public void tesCtor() {
         ayam = new Ayam();
-        assertEquals("Tes Name of Telur","telurAyam",ayam.getTelurAyam().getProdName());
-        assertEquals("Tes Price of Telur",2000,ayam.getTelurAyam().getProdPrice());
-        assertEquals("Tes amount of Telur",0,ayam.getTelurAyam().getProdAmount());
-        assertEquals("Tes Name of Daging","dagingAyam",ayam.getDagingAyam().getProdName());
-        assertEquals("Tes Price of Daging",3000,ayam.getDagingAyam().getProdPrice());
-        assertEquals("Tes amount of Daging",1,ayam.getDagingAyam().getProdAmount());
+        assertEquals("Tes Name of Telur","telurAyam",ayam.getEgg().getProdName());
+        assertEquals("Tes Price of Telur",2000,ayam.getEgg().getProdPrice());
+        assertEquals("Tes amount of Telur",0,ayam.getEgg().getProdAmount());
+        assertEquals("Tes Name of Daging","dagingAyam",ayam.getMeat().getProdName());
+        assertEquals("Tes Price of Daging",3000,ayam.getMeat().getProdPrice());
+        assertEquals("Tes amount of Daging",1,ayam.getMeat().getProdAmount());
         assertEquals("Tes posisi X",0,ayam.getPosisiX());
         assertEquals("Tes posisi Y",0,ayam.getPosisiY());
     }
@@ -29,7 +29,7 @@ public class TestAyam  {
     public void tesTalk() {
         ayam = new Ayam();
         ayam.Talk();
-        assertEquals("Tes amount of Telur",1,ayam.getTelurAyam().getProdAmount());
+        assertEquals("Tes amount of Telur",1,ayam.getEgg().getProdAmount());
     }
     
     @Test
@@ -53,17 +53,17 @@ public class TestAyam  {
     @Test
     public void tesGetEgg() {
         ayam = new Ayam();
-        assertEquals("Tes Name of Telur","telurAyam",ayam.getTelurAyam().getProdName());
-        assertEquals("Tes Price of Telur",2000,ayam.getTelurAyam().getProdPrice());
-        assertEquals("Tes amount of Telur",0,ayam.getTelurAyam().getProdAmount());
+        assertEquals("Tes Name of Telur","telurAyam",ayam.getEgg().getProdName());
+        assertEquals("Tes Price of Telur",2000,ayam.getEgg().getProdPrice());
+        assertEquals("Tes amount of Telur",0,ayam.getEgg().getProdAmount());
     }
 
     @Test
     public void tesGetMeat() {
         ayam = new Ayam();
-        assertEquals("Tes Name of Daging","dagingAyam",ayam.getDagingAyam().getProdName());
-        assertEquals("Tes Price of Daging",3000,ayam.getDagingAyam().getProdPrice());
-        assertEquals("Tes amount of Daging",1,ayam.getDagingAyam().getProdAmount());
+        assertEquals("Tes Name of Daging","dagingAyam",ayam.getMeat().getProdName());
+        assertEquals("Tes Price of Daging",3000,ayam.getMeat().getProdPrice());
+        assertEquals("Tes amount of Daging",1,ayam.getMeat().getProdAmount());
     }
 
     @Test
