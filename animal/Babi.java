@@ -8,7 +8,7 @@ import product.Pork;
 public class Babi extends FarmAnimal implements MeatAnimal, Renderable {
     protected Pork dagingBabi;
     
-    Babi() {
+    public Babi() {
         dagingBabi = new Pork();
         letak.setX(8);
         letak.setY(2);
@@ -31,7 +31,7 @@ public class Babi extends FarmAnimal implements MeatAnimal, Renderable {
     }
 
 	@Override
-	public Boolean isMeatAnimal() {
+	public boolean isMeatAnimal() {
 		// TODO Auto-generated method stub
 		return true;
 	}
@@ -41,4 +41,13 @@ public class Babi extends FarmAnimal implements MeatAnimal, Renderable {
 		// TODO Auto-generated method stub
 		return dagingBabi;
 	}
+	
+	public int getPosisiX() {
+		// TODO Auto-generated method stub
+		return letak.getX();
+	}
+	public int getPosisiY() {
+		// TODO Auto-generated method stub
+		return letak.getY();
+	}  
 }

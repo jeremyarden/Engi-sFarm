@@ -9,7 +9,7 @@ public class Sapi extends FarmAnimal implements MeatAnimal, MilkAnimal {
     protected Beef dagingSapi; ///produk yang dihasilkan berupa beef
     protected CowMilk susuSapi; ///produk yang dihasilkan berupa susu sapi
     
-    Sapi() {
+    public Sapi() {
         susuSapi = new CowMilk();
         dagingSapi = new Beef();
         letak.setX(5);
@@ -39,13 +39,13 @@ public class Sapi extends FarmAnimal implements MeatAnimal, MilkAnimal {
     }
 
 	@Override
-	public Boolean isMilkAnimal() {
+	public boolean isMilkAnimal() {
 		// TODO Auto-generated method stub
 		return true;
 	}
 
 	@Override
-	public Boolean isMeatAnimal() {
+	public boolean isMeatAnimal() {
 		// TODO Auto-generated method stub
 		return true;
 	}
@@ -60,5 +60,14 @@ public class Sapi extends FarmAnimal implements MeatAnimal, MilkAnimal {
 	public FarmProduct getMeat() {
 		// TODO Auto-generated method stub
 		return dagingSapi;
-	}    
+	}  
+	
+	public int getPosisiX() {
+		// TODO Auto-generated method stub
+		return letak.getX();
+	}
+	public int getPosisiY() {
+		// TODO Auto-generated method stub
+		return letak.getY();
+	}  
 }

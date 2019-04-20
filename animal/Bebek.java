@@ -10,7 +10,7 @@ public class Bebek extends FarmAnimal implements MeatAnimal, EggAnimal, Renderab
     protected DuckEgg telurBebek;
     protected DuckMeat dagingBebek;
     
-    Bebek() {
+    public Bebek() {
         telurBebek = new DuckEgg();
         dagingBebek = new DuckMeat();
         letak.setX(2);
@@ -39,13 +39,13 @@ public class Bebek extends FarmAnimal implements MeatAnimal, EggAnimal, Renderab
     }
 
 	@Override
-	public Boolean isEggAnimal() {
+	public boolean isEggAnimal() {
 		// TODO Auto-generated method stub
 		return true;
 	}
 
 	@Override
-	public Boolean isMeatAnimal() {
+	public boolean isMeatAnimal() {
 		// TODO Auto-generated method stub
 		return true;
 	}
@@ -61,4 +61,13 @@ public class Bebek extends FarmAnimal implements MeatAnimal, EggAnimal, Renderab
 		// TODO Auto-generated method stub
 		return dagingBebek;
 	}
+	
+	public int getPosisiX() {
+		// TODO Auto-generated method stub
+		return letak.getX();
+	}
+	public int getPosisiY() {
+		// TODO Auto-generated method stub
+		return letak.getY();
+	}  
 }

@@ -10,7 +10,7 @@ public class Kambing extends FarmAnimal implements MeatAnimal, MilkAnimal, Rende
     protected GoatMilk susuKambing; ///produk yang dihasilkan berupa susu kambing
     protected GoatMeat dagingKambing; ///produk yang dihasilkan berupa daging kambing
     
-    Kambing() {
+    public Kambing() {
         susuKambing = new GoatMilk();
         dagingKambing = new GoatMeat();
         letak.setX(5);
@@ -39,13 +39,13 @@ public class Kambing extends FarmAnimal implements MeatAnimal, MilkAnimal, Rende
     }
 
 	@Override
-	public Boolean isMilkAnimal() {
+	public boolean isMilkAnimal() {
 		// TODO Auto-generated method stub
 		return true;
 	}
 
 	@Override
-	public Boolean isMeatAnimal() {
+	public boolean isMeatAnimal() {
 		// TODO Auto-generated method stub
 		return true;
 	}
@@ -61,4 +61,13 @@ public class Kambing extends FarmAnimal implements MeatAnimal, MilkAnimal, Rende
 		// TODO Auto-generated method stub
 		return dagingKambing;
 	}
+	
+	public int getPosisiX() {
+		// TODO Auto-generated method stub
+		return letak.getX();
+	}
+	public int getPosisiY() {
+		// TODO Auto-generated method stub
+		return letak.getY();
+	}  
 } 

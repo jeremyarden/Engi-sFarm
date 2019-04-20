@@ -3,6 +3,6 @@ package animal;
 import product.FarmProduct;
 
 public interface MeatAnimal {
-    public Boolean isMeatAnimal();
+    public boolean isMeatAnimal();
     public FarmProduct getMeat();
 }

@@ -7,7 +7,7 @@ import product.RabbitMeat;
 public class Kelinci extends FarmAnimal implements MeatAnimal {
     protected RabbitMeat dagingKelinci; ///produk yang dihasilkan berupa daging kelinci
     
-    Kelinci() {
+    public Kelinci() {
         dagingKelinci = new RabbitMeat();
         letak.setX(6);
         letak.setY(6);
@@ -30,7 +30,7 @@ public class Kelinci extends FarmAnimal implements MeatAnimal {
     }
 
 	@Override
-	public Boolean isMeatAnimal() {
+	public boolean isMeatAnimal() {
 		// TODO Auto-generated method stub
 		return true;
 	}
@@ -40,4 +40,13 @@ public class Kelinci extends FarmAnimal implements MeatAnimal {
 		// TODO Auto-generated method stub
 		return dagingKelinci;
 	}
+	
+	public int getPosisiX() {
+		// TODO Auto-generated method stub
+		return letak.getX();
+	}
+	public int getPosisiY() {
+		// TODO Auto-generated method stub
+		return letak.getY();
+	}  
 }

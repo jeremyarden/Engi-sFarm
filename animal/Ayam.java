@@ -9,7 +9,7 @@ public class Ayam extends FarmAnimal implements MeatAnimal, EggAnimal, Renderabl
     protected ChickenEgg telurAyam; ///produk yang  dihasilkan berupa telur ayam
     protected ChickenMeat dagingAyam; ///produk yang dihasilkan berupa daging ayam
     
-    Ayam() {
+    public Ayam() {
         telurAyam = new ChickenEgg();
         dagingAyam = new ChickenMeat();
         letak.setX(0);
@@ -34,11 +34,11 @@ public class Ayam extends FarmAnimal implements MeatAnimal, EggAnimal, Renderabl
         m.setMapEl(letak.getX(),letak.getY(),'C');
     }
 	@Override
-	public Boolean isEggAnimal() {
+	public boolean isEggAnimal() {
 		return true;
 	}
 	@Override
-	public Boolean isMeatAnimal() {
+	public boolean isMeatAnimal() {
 		// TODO Auto-generated method stub
 		return true;
 	}
@@ -51,5 +51,13 @@ public class Ayam extends FarmAnimal implements MeatAnimal, EggAnimal, Renderabl
 	public FarmProduct getMeat() {
 		// TODO Auto-generated method stub
 		return dagingAyam;
+	}
+	public int getPosisiX() {
+		// TODO Auto-generated method stub
+		return letak.getX();
+	}
+	public int getPosisiY() {
+		// TODO Auto-generated method stub
+		return letak.getY();
 	}    
 }
