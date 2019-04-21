@@ -34,7 +34,7 @@ public class Sapi extends FarmAnimal implements MeatAnimal, MilkAnimal {
         return susuSapi;
     } ///getter susu sapi
     
-    void render(Map m) {
+    public void render(Map m) {
         m.setMapEl(letak.getX(),letak.getY(),'S');
     }
 

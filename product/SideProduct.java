@@ -1,5 +1,5 @@
 package product;
-import java.util.Iterator;
+import java.util.List;
 import java.util.Vector; 
 public abstract class SideProduct extends Product
 {
@@ -20,18 +20,18 @@ public abstract class SideProduct extends Product
 	 * Method yang memeriksa jika sebuah SideProduct dapat dibuat dari list bahan yang diberikan
 	 * @return Jika ingredient yang dipersiapkan sesuai resep mengembalikan true
 	 */
-	public boolean isRecipe(Vector<Product> candidate)
+	public boolean isRecipe(List<Product> ingredients)
 	{
 		boolean correct;
 		correct = true;
 		int iterRec, iterCan;
 		iterRec = 0;
 		iterCan = 0;
-		while(iterCan < candidate.size() && correct)
+		while(iterCan < ingredients.size() && correct)
 		{
 			if(iterRec < recipe.size())
 			{
-				if(candidate.get(iterCan).getProdName().equals(recipe.get(iterRec).getProdName()))
+				if(ingredients.get(iterCan).getProdName().equals(recipe.get(iterRec).getProdName()))
 				{
 					iterCan++;
 					iterRec = 0;
